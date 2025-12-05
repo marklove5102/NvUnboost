@@ -4,6 +4,8 @@
 
 This small tool provides an experimental workaround for application/system freezes caused by a combination of Windows 11 24H2 and NVIDIA display drivers. It is not endorsed by Microsoft or NVIDIA. Use it at your own risk.
 
+**Update: NVIDIA driver version 591.44 seems to have resolved these issues. Using this tool should no longer be necessary.**
+
 For more details, refer to this post on the NVIDIA forums: [Threads getting stuck on real-time priority on Windows 11 24H2](https://www.nvidia.com/en-us/geforce/forums/game-ready-drivers/13/561084/threads-getting-stuck-on-real-time-priority-on-win/)
 
 It continuously monitors all threads on the system, and attempts to lower the priority of threads that appear to be stuck at a real-time dynamic priority level (16 or higher), but with a base priority lower than 16.
